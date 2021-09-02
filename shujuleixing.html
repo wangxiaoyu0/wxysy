@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>数据类型</title>
+</head>
+
+<body>
+	<script>
+		// 数据类型
+		// 1.基本数据类型
+		//  String字符串
+		// Boolean 布尔值
+		// Number  数字
+		// Null   空
+		// undefined  未定义
+		// Symbol  唯一值
+		// bigint  大数字
+		// 2.引用数据类型
+		// Object
+		//  plainObject 基类对象==={}
+		//  Array 数组
+		//  Function 函数
+		//  Date  日期
+		//  RegExp 正则
+		// console.dir(Object)
+		// console.dir(Array)
+		// console.dir(Function)
+		// console.dir(Date)
+		// console.dir(RegExp)
+
+		// let b = {}
+		// let a = [1, 2, 3]
+		// function name(params) {
+
+		// }
+		// console.log(name instanceof Function);
+
+
+		// class vue {
+
+		// 	constructor(a, b) {
+		// 		console.log(a, b);
+		// 	}
+
+		// 	get(s) {
+		// 		console.log(s);
+		// 	}
+		// 	post() {
+
+		// 	}
+
+		// }
+
+		// const v = new vue(1, 2)
+		// v.get('111')
+
+
+		// class p extends vue {
+
+		// }
+
+		// const p1 = new p()
+
+		// p1.get('0000')
+
+
+		// const t = (function () {
+
+
+		// 	console.log('1111111111');
+
+		// 	return () => {
+
+		// 		function get(params) {
+		// 			console.log(params);
+		// 		}
+
+		// 		function post(params) {
+
+		// 		}
+
+		// 		return {
+		// 			get, post
+		// 		}
+
+		// 	}
+
+		// })()
+
+
+		// t().get('s')
+
+
+
+
+
+		// Object.prototype.toString.call()
+
+
+		// function name(params) {
+		// 	return () => {
+		// 		console.log(this);
+		// 	}
+
+		// }
+
+		// let n = name()
+
+		// console.log(n.prototype);
+
+		// console.log(Symbol("AA")==Symbol("AA")
+		// )
+		// console.log(typeof Symbol("AA"));
+
+		// localStorage.setItem()
+		// localStorage.getItem()
+		// 	localStorage.removeItem()
+		// 	localStorage.clear()
+		// 	sessionStorage
+
+		// 遍历
+		// let obj = {
+		// 	name: "haha",
+		// 	age: 18
+		// }
+		// for (let key in obj) {
+		// 	console.log("for in", key, obj[key]);
+		// }
+		// // for(let key of obj){
+		// // 	console.log("for of",key,obj[key]);
+		// // }
+
+		// let arr = [1, 2, 3]
+		// for (let index in arr) {
+		// 	console.log("for in", index, arr[index])
+		// }
+		// for (let item of arr) {
+		// 	console.log("for of", item)
+		// }
+
+
+
+
+
+		function f() {
+			console.log(this);
+		}
+
+
+
+		class a {
+			constructor() {
+				let m = f.call(this)
+				// m()
+				
+			}
+		}
+
+		const w = new a()
+
+
+
+	</script>
+</body>
+
+</html>
